@@ -1,0 +1,299 @@
+body {
+    font-family: "Century Schoolbook";
+    color: aliceblue;
+    background-image: url('../IMG/FONDOTOTAL.jpg'); /* Cambia la ruta a la de tu imagen */
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    margin: 0; /* Elimina el margen del body */
+    height: 91vh; /* Asegura que el fondo ocupe toda la altura de la ventana */
+}
+
+h1, h2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para el texto */
+}
+
+h1{
+    font-family: "Gabriola";
+    font-size: 60px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+h2{
+    font-family: "Gabriola";
+    font-size: 40px;
+    margin-top: 0;
+    color: #ffcc00; /* Color dorado para el subtítulo */
+}
+.navegador{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px; 
+    margin: 0;  
+    color: aquamarine;
+    font-family: "Gabriola";
+    background-color: rgba(57, 35, 9, 0.636); /* Negro semi-transparente */
+    padding: 20px;
+}
+
+a{
+    text-decoration: none; 
+    color: white;
+    padding: 10px;
+}
+
+a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    /* repetirrrrr */
+}
+
+.seccion {
+    display: flex;
+    background-color: rgba(57, 35, 9, 0.636); 
+}
+
+
+.hero-section {
+    position: relative;
+    height: 569px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+}
+
+.historia {
+    display: flex;
+    background-color: rgba(57, 35, 9, 0.8);
+    padding: 70px;
+    color: #fff;
+}
+
+.historia .columna_texto {
+    flex: 1;
+    padding: 80px;
+    margin-right: 50px;
+}
+
+.historia h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.historia p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+.responsabilidad-social {
+    background-color:rgba(59, 33, 33);
+    padding: 50px 20px;
+    color: white;
+    text-align: center;
+}
+
+.responsabilidad-social h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.responsabilidad-social p {
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto 30px auto;
+}
+
+.responsabilidad-social img{
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.responsabilidad-social img:hover{
+    transform: scale(1.05);
+}
+
+.mision-vision {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+}
+
+.mision-vision .columna_texto {
+    flex: 1;
+    padding: 20px;
+}
+
+.mision-vision h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.mision-vision p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.mision-vision img {
+    max-width: 90%;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.mision-vision .columna_texto{
+    background-color: rgba(57, 35, 9, 0.8);
+}
+
+
+/* Estilo de las columnas */
+.columna_texto {
+    flex: 1;
+    padding: 20px;
+    max-width: 600px;
+}
+
+/* Agregar márgenes a las imágenes */
+.columna_imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+
+
+/* Estilos del contenedor del slider */
+.slider-frame {
+    width: 600px;
+    height: 600px; /* Establecer una altura fija */
+    margin: 50px auto 0;
+    overflow: hidden;
+    flex: 1;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Contenedor de las imágenes en el slider */
+.slider-frame ul {
+    display: flex;
+    padding: 0;
+    width: 400%; /* Esto asegura que las imágenes se repitan de manera adecuada */
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+/* Cada elemento de la lista (cada imagen en el slider) */
+.slider-frame li {
+    width: 25%; /* Ajustamos a un 25% para que haya 4 imágenes por slider */
+    list-style: none;
+}
+
+/* Estilo para las imágenes dentro del slider */
+.slider-frame img {
+    width: 100%; /* Ocupa el 100% del contenedor li */
+    height: 100%; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Esto asegura que la imagen cubra todo el contenedor sin distorsionarse */
+}
+
+/* Animación para deslizar las imágenes */
+@keyframes slide {
+    0% { margin-left: 0; }
+    20% { margin-left: 0; }
+    25% { margin-left: -100%; }
+    45% { margin-left: -100%; }
+    50% { margin-left: -200%; }
+    70% { margin-left: -200%; }
+    75% { margin-left: -300%; }
+    100% { margin-left: -300%; }
+}
+
+
+
+.footer {
+    color: white;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+    margin-top: auto;
+}
+
+.footer-container {
+    background-color: rgba(57, 35, 9, 0.636); 
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    width: 150px;
+    height: auto;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #B87D3B;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: #B87D3B;
+    transform: translateY(-3px);
+}
+
+.footer-contact {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-contact a {
+    color: #B87D3B;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.footer-contact a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #B87D3B;
+    width: 100%;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-links a {
+        width: 200px;
+        text-align: center;
+    }
+}
